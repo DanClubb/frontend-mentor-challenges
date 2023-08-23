@@ -1,0 +1,27 @@
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.homepage-description {
+  margin-top: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  width: 70%;
+}
+
+.link {
+  color: rgb(2, 2, 170);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: blue;
+}

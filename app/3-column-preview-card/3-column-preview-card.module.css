@@ -1,0 +1,63 @@
+main {
+  /* Primary Colours */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral Colours */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.column-preview-card {
+  display: flex;
+  width: 70%;
+  height: 60%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.car {
+  padding: 2rem;
+  width: 1fr;
+  height: 100%;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.car > h1 {
+  color: var(--very-light-gray);
+}
+
+.car > p {
+  color: var(--transparent-white);
+  font-size: 15px;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 100vw;
+  background-color: var(--very-light-gray);
+}
+
+.btn--sedans {
+  color: var(--bright-orange);
+}
+
+.btn--suvs {
+  color: var(--dark-cyan);
+}
+
+.btn--luxury {
+  color: var(--very-dark-cyan);
+}
