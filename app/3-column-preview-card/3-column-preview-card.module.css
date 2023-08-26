@@ -1,4 +1,4 @@
-main {
+.main {
   /* Primary Colours */
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -9,16 +9,35 @@ main {
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
-.column-preview-card {
+@media (min-width: 600px) {
+  .main {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.columnPreviewCard {
   display: flex;
-  width: 70%;
+  width: 60%;
   height: 60%;
   border-radius: 6px;
   overflow: hidden;
 }
 
-.car {
-  padding: 2rem;
+@media (max-width: 600px) {
+  .columnPreviewCard {
+    flex-direction: column;
+    margin: 3rem auto;
+    width: 85%;
+    height: auto;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
   width: 1fr;
   height: 100%;
 }
@@ -35,29 +54,40 @@ main {
   background-color: var(--very-dark-cyan);
 }
 
-.car > h1 {
+.column > h1 {
   color: var(--very-light-gray);
+  font-size: 2rem;
 }
 
-.car > p {
+.column > p {
   color: var(--transparent-white);
   font-size: 15px;
 }
 
 .btn {
-  padding: 0.6rem 1.5rem;
+  margin-top: auto;
+  width: 8.2rem;
+  height: 2.6rem;
   border-radius: 100vw;
+  border: 1px solid var(--very-light-gray);
   background-color: var(--very-light-gray);
+  font-size: 15px;
 }
 
-.btn--sedans {
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  color: var(--very-light-gray);
+}
+
+.btnSedans {
   color: var(--bright-orange);
 }
 
-.btn--suvs {
+.btnSuvs {
   color: var(--dark-cyan);
 }
 
-.btn--luxury {
+.btnLuxury {
   color: var(--very-dark-cyan);
 }
