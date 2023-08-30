@@ -4,7 +4,7 @@ import "./style.css";
 export default function ResultsSummary() {
   return (
     <Fragment>
-      <main>
+      <main className="results-summary-body">
         <div className="result-summary">
           <div className="results">
             <h1 className="section-title">Your Result</h1>

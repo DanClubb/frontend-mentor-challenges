@@ -1,6 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
+import ChallengeCard from "./components/ChallengeCard";
 import "./homepage.css";
+import CHALLENGE_PREVIEWS from "@/public/challenge-previews/challengePreviews";
+import { object } from "zod";
+
+const challenges = {
+  resultsSummary: {
+    route: "/results-summary",
+    img: CHALLENGE_PREVIEWS.resultsSummary,
+    title: "Results Summary",
+    description:
+      "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!",
+  },
+  productPreviewCard: {
+    route: "/product-preview-card",
+    img: CHALLENGE_PREVIEWS.productPreviewCard,
+    title: "Product Preview Card",
+    description:
+      "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!",
+  },
+  newsHomepage: {
+    route: "/news-homepage",
+    img: CHALLENGE_PREVIEWS.newsHomepage,
+    title: "News Hompage",
+    description:
+      "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!",
+  },
+  columnPreviewCard: {
+    route: "/3-column-preview-card",
+    img: CHALLENGE_PREVIEWS.columnPreviewCard,
+    title: "3 Column Preview Card",
+    description:
+      "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!",
+  },
+};
 
 export default function Home() {
   return (
@@ -10,18 +44,15 @@ export default function Home() {
         Click a link to view my finished attempt of each challenge
       </p>
       <section className="links">
-        <Link href="/results-summary" className="link">
-          Results Summary
-        </Link>
-        <Link href="/news-homepage" className="link">
-          News Homepage
-        </Link>
-        <Link href="/3-column-preview-card" className="link">
-          3 Column Preview Card
-        </Link>
-        <Link href="/product-preview-card" className="link">
-          Product Preview Card
-        </Link>
+        {Object.keys(challenges).map((challenge) => (
+          <ChallengeCard
+            route={challenges[challenge].route}
+            img={challenges[challenge].img}
+            title={challenges[challenge].title}
+            description={challenges[challenge].description}
+            key={challenge}
+          />
+        ))}
       </section>
       <div className="attribution">
         Challenge by{" "}
