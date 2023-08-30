@@ -1,32 +1,11 @@
-h1 {
-  margin-top: 1rem;
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-h2 {
+.cardTitle {
   color: rgb(13, 185, 139);
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
 }
 
-.homepage-description {
-  margin-top: 3rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.5rem;
-  margin: 3rem auto;
-  width: 70%;
-}
-
-.challenge-card {
+.challengeCard {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -34,11 +13,11 @@ h2 {
   overflow: hidden;
 }
 
-.challenge-card > img {
+.challengeCard > img {
   flex: 1;
 }
 
-.challenge-card > .content {
+.content {
   flex: 2;
 
   display: flex;
@@ -47,7 +26,7 @@ h2 {
   padding: 1rem;
 }
 
-.challenge-card p {
+.challengeCard p {
   font-size: 0.9rem;
 }
 

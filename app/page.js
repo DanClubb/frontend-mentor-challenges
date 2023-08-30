@@ -1,9 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import ChallengeCard from "./components/ChallengeCard";
-import "./homepage.css";
 import CHALLENGE_PREVIEWS from "@/public/challenge-previews/challengePreviews";
-import { object } from "zod";
+import styles from "./homepage.module.css";
 
 const challenges = {
   resultsSummary: {
@@ -39,11 +36,11 @@ const challenges = {
 export default function Home() {
   return (
     <main>
-      <h1>Frontend Mentor Challenges</h1>
-      <p className="homepage-description">
+      <h1 className={styles.title}>Frontend Mentor Challenges</h1>
+      <p className={styles.homepageDescription}>
         Click a link to view my finished attempt of each challenge
       </p>
-      <section className="links">
+      <section className={styles.links}>
         {Object.keys(challenges).map((challenge) => (
           <ChallengeCard
             route={challenges[challenge].route}
