@@ -16,8 +16,7 @@
 .productCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: max(45%, 622px);
-
+  width: 622px;
   border-radius: 10px;
   overflow: hidden;
 }
