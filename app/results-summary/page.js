@@ -1,20 +1,22 @@
 import { Fragment } from "react";
-import "./style.css";
+import styles from "./results-summary.module.css";
 
 export default function ResultsSummary() {
   return (
     <Fragment>
-      <main className="results-summary-body">
-        <div className="result-summary">
-          <div className="results">
-            <h1 className="section-title">Your Result</h1>
+      <main className={styles.resultsSummaryBody}>
+        <div className={styles.resultSummary}>
+          <div
+            className={`${styles.results} ${styles.grid} ${styles.gridGapLarge}`}
+          >
+            <h1 className={styles.sectionTitle}>Your Result</h1>
 
-            <p className="result-score">
+            <p className={styles.resultScore}>
               <span>76</span> of 100
             </p>
 
-            <div>
-              <p className="result-rank">Great</p>
+            <div className={styles.grid}>
+              <p className={styles.resultRank}>Great</p>
               <p>
                 You scored higher than 65% of the people who have taken these
                 tests
@@ -22,13 +24,15 @@ export default function ResultsSummary() {
             </div>
           </div>
 
-          <div className="summary">
-            <h2 className="section-title">summary</h2>
-            <div>
-              <div className="summary-item">
-                <div>
+          <div
+            className={`${styles.summary} ${styles.grid} ${styles.gridGapLarge}`}
+          >
+            <h2 className={styles.sectionTitle}>Summary</h2>
+            <div className={styles.grid}>
+              <div className={`${styles.summaryItem} ${styles.reaction}`}>
+                <div className={styles.flexGroup}>
                   <svg
-                    className="summary-item"
+                    className={styles.summaryIcon}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -42,17 +46,17 @@ export default function ResultsSummary() {
                       d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"
                     />
                   </svg>
-                  <h3 className="summary-item-title">Reaction</h3>
+                  <h3 className={styles.summaryItemTitle}>Reaction</h3>
                 </div>
-                <p className="summary-score">
-                  <span>80</span>/100
+                <p className={styles.summaryScore}>
+                  <span>80</span> / 100
                 </p>
               </div>
 
-              <div className="summary-item">
-                <div>
+              <div className={`${styles.summaryItem} ${styles.memory}`}>
+                <div className={styles.flexGroup}>
                   <svg
-                    className="summary-icon"
+                    className={styles.summaryIcon}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -78,17 +82,17 @@ export default function ResultsSummary() {
                       d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"
                     />
                   </svg>
-                  <h3 className="summary-item-title">Memory</h3>
+                  <h3 className={styles.summaryItemTitle}>Memory</h3>
                 </div>
-                <p className="summary-score">
-                  <span>92</span>/100
+                <p className={styles.summaryScore}>
+                  <span>92</span> / 100
                 </p>
               </div>
 
-              <div className="summary-item">
-                <div>
+              <div className={`${styles.summaryItem} ${styles.verbal}`}>
+                <div className={styles.flexGroup}>
                   <svg
-                    className="summary-icon"
+                    className={styles.summaryIcon}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -102,17 +106,17 @@ export default function ResultsSummary() {
                       d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"
                     />
                   </svg>
-                  <h3 className="summary-item-title">Verbal</h3>
+                  <h3 className={styles.summaryItemTitle}>Verbal</h3>
                 </div>
-                <p className="summary-score">
-                  <span>61</span>/100
+                <p className={styles.summaryScore}>
+                  <span>61</span> / 100
                 </p>
               </div>
 
-              <div className="summary-item">
-                <div>
+              <div className={`${styles.summaryItem} ${styles.visual}`}>
+                <div className={styles.flexGroup}>
                   <svg
-                    className="summary-icon"
+                    className={styles.summaryIcon}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -132,14 +136,14 @@ export default function ResultsSummary() {
                       d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"
                     />
                   </svg>
-                  <h3 className="summary-item-title">Visual</h3>
+                  <h3 className={styles.summaryItemTitle}>Visual</h3>
                 </div>
-                <p className="summary-score">
-                  <span>72</span>/100
+                <p className={styles.summaryScore}>
+                  <span>72</span> / 100
                 </p>
               </div>
             </div>
-            <button className="button">Continue</button>
+            <button className={styles.button}>Continue</button>
           </div>
         </div>
       </main>
