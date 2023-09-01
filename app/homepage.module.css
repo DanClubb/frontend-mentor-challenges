@@ -18,3 +18,21 @@
   margin: 3rem auto;
   width: 70%;
 }
+
+@media (max-width: 1255px) {
+  .links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 508px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
