@@ -26,15 +26,92 @@
   padding: 1rem;
 }
 
+.challengeInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.html {
+  margin-right: 1rem;
+  color: #6abecd;
+}
+
+.css {
+  margin-right: 1rem;
+  color: #3e54a3;
+}
+
+.js {
+  color: #cf6390;
+}
+
+.difficulty {
+  display: flex;
+  align-items: center;
+  border: currentColor 1px solid;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.difficulty div {
+  padding: 0.15rem 0.65rem;
+}
+
+.difficultyNumber {
+  background-color: currentColor;
+}
+
+.difficulty span {
+  color: white;
+}
+
+.newbie {
+  color: #6abecd;
+}
+
+.junior {
+  color: #aad742;
+}
+
 .challengeCard p {
   font-size: 0.9rem;
 }
 
+.linkText {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 .link {
-  color: rgb(2, 2, 170);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #c71630;
   text-decoration: underline;
 }
 
 .link:hover {
-  color: blue;
+  color: #ed2c49;
+}
+
+@media (max-width: 508px) {
+  .skill,
+  .difficulty,
+  .linkText {
+    font-size: 0.8rem;
+  }
+
+  .html,
+  .css {
+    margin-right: 0.5rem;
+  }
 }

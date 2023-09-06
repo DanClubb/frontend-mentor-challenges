@@ -1,0 +1,34 @@
+{
+  "resultsSummary": {
+    "route": "/results-summary",
+    "title": "Results Summary",
+    "skills": ["html", "css"],
+    "difficulty": "newbie",
+    "difficultyNumber": "1",
+    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+  },
+  "productPreviewCard": {
+    "route": "/product-preview-card",
+    "title": "Product Preview Card",
+    "skills": ["html", "css"],
+    "difficulty": "newbie",
+    "difficultyNumber": "1",
+    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+  },
+  "newsHomepage": {
+    "route": "/news-homepage",
+    "title": "News Hompage",
+    "skills": ["html", "css", "js"],
+    "difficulty": "junior",
+    "difficultyNumber": "2",
+    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+  },
+  "columnPreviewCard": {
+    "route": "/3-column-preview-card",
+    "title": "3 Column Preview Card",
+    "skills": ["html", "css"],
+    "difficulty": "newbie",
+    "difficultyNumber": "1",
+    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+  }
+}
