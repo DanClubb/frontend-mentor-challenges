@@ -7,7 +7,6 @@ export default function Home() {
   const sortByDifficulty = Object.keys(challenges).sort((a, b) => {
     return challenges[b].difficultyNumber - challenges[a].difficultyNumber;
   });
-  console.log(sortByDifficulty);
   return (
     <main>
       <h1 className={styles.title}>Frontend Mentor Challenges</h1>

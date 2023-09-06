@@ -28,6 +28,7 @@
   --fw-black: 800;
 
   padding: 4rem 10rem;
+  background-color: var(--off-white);
   color: var(--dark-grayish-blue);
   font-family: var(--font-family-default);
   font-size: var(--fs-default);
