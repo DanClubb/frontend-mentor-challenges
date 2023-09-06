@@ -4,6 +4,10 @@ import CHALLENGE_PREVIEWS from "@/public/challenge-previews/challengePreviews";
 import styles from "./homepage.module.css";
 
 export default function Home() {
+  const sortByDifficulty = Object.keys(challenges).sort((a, b) => {
+    return challenges[b].difficultyNumber - challenges[a].difficultyNumber;
+  });
+  console.log(sortByDifficulty);
   return (
     <main>
       <h1 className={styles.title}>Frontend Mentor Challenges</h1>
@@ -11,7 +15,7 @@ export default function Home() {
         Click a link to view my finished attempt of each challenge
       </p>
       <section className={styles.links}>
-        {Object.keys(challenges).map((challenge) => (
+        {sortByDifficulty.map((challenge) => (
           <ChallengeCard
             route={challenges[challenge].route}
             img={CHALLENGE_PREVIEWS[challenge]}
