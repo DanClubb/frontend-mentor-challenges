@@ -1,14 +1,35 @@
-import styles from "./news-homepage.module.css";
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import IMAGES from "./assets/images/images";
+import styles from "./news-homepage.module.css";
 
 export default function NewsHomepage() {
+  const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavExpanded((prev) => {
+      return !prev;
+    });
+  };
   return (
     <div className={styles.actingBody}>
+      <div
+        className={`${mobileNavExpanded ? styles.darkenBackground : ""}`}
+      ></div>
       <header className={styles.header}>
         <Image src={IMAGES.logo} alt="logo" />
+        <button
+          className={`${styles.mobileNavToggle}`}
+          aria-controls="nav"
+          aria-expanded={mobileNavExpanded}
+          onClick={toggleMobileNav}
+        >
+          <span className="sr-only">Menu</span>
+        </button>
         <nav>
-          <ul className={styles.nav}>
+          <ul className={styles.nav} data-visible={mobileNavExpanded}>
             <li>Home</li>
             <li>New</li>
             <li>Popular</li>
@@ -19,7 +40,15 @@ export default function NewsHomepage() {
       </header>
       <main className={styles.main}>
         <section>
-          <Image src={IMAGES.web3} alt="web 3" />
+          <picture>
+            <source srcSet={IMAGES.web3.src} media="(min-width:420px)" />
+            <Image
+              className={styles.web3}
+              src={IMAGES.web3Mobile}
+              alt="web 3"
+            />
+          </picture>
+
           <div className={styles.mainArticle}>
             <h1>The Bright Future of Web 3.0?</h1>
             <div className={styles.mainArticlePreview}>
