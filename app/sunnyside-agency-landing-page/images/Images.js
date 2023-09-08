@@ -1,0 +1,36 @@
+const IMAGES = {
+  logo: require("./logo.svg").default,
+  arrowDown: require("./icon-arrow-down.svg").default,
+  facebook: require("./icon-facebook.svg").default,
+  hamburger: require("./icon-hamburger.svg").default,
+  instagram: require("./icon-instagram.svg").default,
+  pinterest: require("./icon-pinterest.svg").default,
+  twitter: require("./icon-twitter.svg").default,
+  emily: require("./image-emily.jpg").default,
+  jennie: require("./image-jennie.jpg").default,
+  thomas: require("./image-thomas.jpg").default,
+  desktop: {
+    cone: require("./desktop/image-gallery-cone.jpg").default,
+    milkBottles: require("./desktop/image-gallery-milkbottles.jpg").default,
+    galleryOrange: require("./desktop/image-gallery-orange.jpg").default,
+    sugarCubes: require("./desktop/image-gallery-sugarcubes.jpg").default,
+    graphicDesignCherry: require("./desktop/image-graphic-design.jpg").default,
+    photographyOrange: require("./desktop/image-photography.jpg").default,
+    headerOrange: require("./desktop/image-header.jpg").default,
+    cup: require("./desktop/image-stand-out.jpg").default,
+    egg: require("./desktop/image-transform.jpg").default,
+  },
+  mobile: {
+    cone: require("./mobile/image-gallery-cone.jpg").default,
+    milkBottles: require("./mobile/image-gallery-milkbottles.jpg").default,
+    galleryOrange: require("./mobile/image-gallery-orange.jpg").default,
+    sugarCubes: require("./mobile/image-gallery-sugarcubes.jpg").default,
+    graphicDesignCherry: require("./mobile/image-graphic-design.jpg").default,
+    photographyOrange: require("./mobile/image-photography.jpg").default,
+    headerOrange: require("./mobile/image-header.jpg").default,
+    cup: require("./mobile/image-stand-out.jpg").default,
+    egg: require("./mobile/image-transform.jpg").default,
+  },
+};
+
+export default IMAGES;

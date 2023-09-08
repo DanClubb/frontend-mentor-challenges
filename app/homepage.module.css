@@ -1,5 +1,10 @@
+.homepage {
+  /* background-color: rgb(251, 245, 245); */
+  background-color: rgb(255, 253, 250);
+}
+
 .title {
-  margin-top: 1rem;
+  padding-top: 1rem;
   font-size: 4rem;
   font-weight: 700;
   text-align: center;

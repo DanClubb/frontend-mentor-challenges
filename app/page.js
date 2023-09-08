@@ -8,7 +8,7 @@ export default function Home() {
     return challenges[b].difficultyNumber - challenges[a].difficultyNumber;
   });
   return (
-    <main>
+    <main className={styles.homepage}>
       <h1 className={styles.title}>Frontend Mentor Challenges</h1>
       <p className={styles.homepageDescription}>
         Click a link to view my finished attempt of each challenge
