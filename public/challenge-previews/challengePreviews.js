@@ -5,6 +5,8 @@ const CHALLENGE_PREVIEWS = {
   productPreviewCard: require("./product-preview-card.jpg").default,
   sunnysideAgencyLandingPage: require("./sunnyside-landing-page-preview.jpg")
     .default,
+  loopstudiosLandingPage: require("./loopstudios-landing-page-preview.jpg")
+    .default,
 };
 
 export default CHALLENGE_PREVIEWS;

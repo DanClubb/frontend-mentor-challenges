@@ -15,6 +15,14 @@
     "difficultyNumber": "2",
     "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
   },
+  "loopstudiosLandingPage": {
+    "route": "/loopstudios-landing-page",
+    "title": "Loopstudios Landing Page",
+    "skills": ["html", "css", "js"],
+    "difficulty": "junior",
+    "difficultyNumber": "2",
+    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+  },
   "productPreviewCard": {
     "route": "/product-preview-card",
     "title": "Product Preview Card",
