@@ -69,7 +69,7 @@ export default function LoopstudiosLandingPage() {
               <article
                 key={creations[creation].name}
                 style={{
-                  background: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) no-repeat center / cover;`,
+                  background: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) center / cover no-repeat`,
                 }}
               >
                 {creations[creation].name}
