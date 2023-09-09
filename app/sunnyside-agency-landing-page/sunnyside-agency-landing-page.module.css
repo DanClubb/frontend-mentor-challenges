@@ -19,6 +19,12 @@
   font-size: var(--default-font-size);
 }
 
+@media (max-width: 600px) {
+  .actingBody {
+    font-size: 1rem;
+  }
+}
+
 /* HEADER & NAVBAR */
 
 .header {
@@ -77,6 +83,70 @@
   left: 49%;
 }
 
+@media (max-width: 600px) {
+  .header {
+    background-image: url("./images/mobile/image-header.jpg");
+    height: 530px;
+  }
+
+  .mobileNavToggle {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    background-image: url("./images/icon-hamburger.svg");
+    width: 24px;
+    height: 18px;
+    border: none;
+  }
+
+  .navbar {
+    padding-top: 2.5rem;
+  }
+
+  .navItems {
+    position: fixed;
+    top: 7rem;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    width: calc(100% - 4rem);
+    background-color: white;
+    color: var(--grayish-blue);
+    transition: transform 350ms ease-out;
+  }
+
+  .navItems[data-visible="true"] {
+    display: flex;
+  }
+
+  .navItems::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid white;
+  }
+
+  .header h1 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .contact {
+    background-color: var(--yellow);
+  }
+
+  .arrow {
+    top: 18rem;
+    left: 10.6rem;
+  }
+}
+
 /* ABOUT SECTION */
 
 .transform,
@@ -88,12 +158,18 @@
   flex-direction: row-reverse;
 }
 
+.transform picture,
+.standOut picture {
+  height: fit-content;
+}
+
 .about {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  padding: 10rem 10rem;
+  padding: 8.5rem;
 }
 
 .about h2 {
@@ -140,6 +216,22 @@
   --opacity: 0.8;
 }
 
+@media (max-width: 600px) {
+  .transform,
+  .standOut {
+    flex-direction: column-reverse;
+  }
+
+  .about {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .about a {
+    margin-inline: auto;
+  }
+}
+
 /* SERVICES SECTION */
 
 .services {
@@ -169,6 +261,28 @@
   margin-bottom: 2rem;
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .graphicDesign,
+  .photography {
+    padding: 25rem 1rem 0 1rem;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+
+  .graphicDesign {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+  }
+
+  .photography {
+    background-image: url("./images/mobile/image-photography.jpg");
+  }
 }
 
 /* CLIENT TESTIMONIALS */
@@ -223,10 +337,42 @@
   font-size: 0.85rem;
 }
 
+@media (max-width: 600px) {
+  .testimonials {
+    margin: 4rem 0;
+  }
+
+  .testimonials h4 {
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .testimonials > div {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2.5rem;
+  }
+
+  .person {
+    gap: 1.5rem;
+  }
+}
+
 /* GALLERY */
 
 .gallery {
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .galleryItem {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
 }
 
 /* FOOTER */
@@ -267,6 +413,10 @@
   cursor: pointer;
   color: var(--white);
   fill: var(--white);
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 600px) {
 }
 
 /* ANIMATION */

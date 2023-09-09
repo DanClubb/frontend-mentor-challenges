@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import IMAGES from "./images/Images.js";
 import styles from "./sunnyside-agency-landing-page.module.css";
@@ -8,6 +11,14 @@ const barlow = Barlow({ weight: "600", subsets: ["latin"] });
 const fraunces = Fraunces({ weight: ["700", "900"], subsets: ["latin"] });
 
 export default function SunnysideAgencyLandingPage() {
+  const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavExpanded((prev) => {
+      return !prev;
+    });
+  };
+
   return (
     <div className={`${styles.actingBody} ${barlow.className}`}>
       <header className={styles.header}>
@@ -18,7 +29,15 @@ export default function SunnysideAgencyLandingPage() {
             height={24}
             alt="sunnyside logo"
           />
-          <ul className={styles.navItems}>
+          <button
+            className={`${styles.mobileNavToggle}`}
+            aria-controls="nav"
+            aria-expanded={mobileNavExpanded}
+            onClick={toggleMobileNav}
+          >
+            <span className="sr-only">Menu</span>
+          </button>
+          <ul className={styles.navItems} data-visible={mobileNavExpanded}>
             <li>About</li>
             <li>Services</li>
             <li>Projects</li>
@@ -46,12 +65,18 @@ export default function SunnysideAgencyLandingPage() {
               </p>
               <a className={fraunces.className}>Learn more</a>
             </div>
-            <Image
-              src={IMAGES.desktop.egg}
-              width={720}
-              height={600}
-              alt="egg"
-            />
+            <picture>
+              <source
+                srcSet={IMAGES.mobile.egg.src}
+                media="(max-width:600px)"
+              />
+              <Image
+                src={IMAGES.desktop.egg}
+                width={720}
+                height={600}
+                alt="egg"
+              />
+            </picture>
           </div>
           <div className={styles.standOut}>
             <div className={styles.about}>
@@ -65,12 +90,18 @@ export default function SunnysideAgencyLandingPage() {
               </p>
               <a className={fraunces.className}>Learn more</a>
             </div>
-            <Image
-              src={IMAGES.desktop.cup}
-              width={720}
-              height={600}
-              alt="cup"
-            />
+            <picture>
+              <source
+                srcSet={IMAGES.mobile.cup.src}
+                media="(max-width:600px)"
+              />
+              <Image
+                src={IMAGES.desktop.cup}
+                width={720}
+                height={600}
+                alt="cup"
+              />
+            </picture>
           </div>
           <div className={styles.services}>
             <div className={styles.graphicDesign}>
@@ -138,13 +169,37 @@ export default function SunnysideAgencyLandingPage() {
           </section>
         </section>
         <section className={styles.gallery}>
-          <Image src={IMAGES.desktop.milkBottles} alt="milk bottles" />
-          <Image
-            src={IMAGES.desktop.galleryOrange}
-            alt="orange slice on a plate"
-          />
-          <Image src={IMAGES.desktop.cone} alt="ice cream cone" />
-          <Image src={IMAGES.desktop.sugarCubes} alt="sugar cubes" />
+          <picture className={styles.galleryItem}>
+            <source
+              srcSet={IMAGES.mobile.milkBottles.src}
+              media="(max-width: 600px)"
+            />
+            <Image src={IMAGES.desktop.milkBottles} alt="milk bottles" />
+          </picture>
+          <picture className={styles.galleryItem}>
+            <source
+              srcSet={IMAGES.mobile.galleryOrange.src}
+              media="(max-width: 600px)"
+            />
+            <Image
+              src={IMAGES.desktop.galleryOrange}
+              alt="orange slice on a plate"
+            />
+          </picture>
+          <picture className={styles.galleryItem}>
+            <source
+              srcSet={IMAGES.mobile.cone.src}
+              media="(max-width: 600px)"
+            />
+            <Image src={IMAGES.desktop.cone} alt="ice cream cone" />
+          </picture>
+          <picture className={styles.galleryItem}>
+            <source
+              srcSet={IMAGES.mobile.sugarCubes.src}
+              media="(max-width: 600px)"
+            />
+            <Image src={IMAGES.desktop.sugarCubes} alt="sugar cubes" />
+          </picture>
         </section>
       </main>
 
