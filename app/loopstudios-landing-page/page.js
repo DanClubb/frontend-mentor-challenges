@@ -8,8 +8,16 @@ import IMAGES from "./images/images";
 import { Alata } from "next/font/google";
 import { Josefin_Sans } from "next/font/google";
 
-const alata = Alata({ weight: "400", subsets: ["latin"] });
-const josefinSans = Josefin_Sans({ weight: "300", subsets: ["latin"] });
+const alata = Alata({
+  variable: "--font-alata",
+  weight: "400",
+  subsets: ["latin"],
+});
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
+  weight: "300",
+  subsets: ["latin"],
+});
 
 export default function LoopstudiosLandingPage() {
   const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
@@ -20,7 +28,9 @@ export default function LoopstudiosLandingPage() {
     });
   };
   return (
-    <div className={`${styles.actingBody} ${josefinSans.className}`}>
+    <div
+      className={`${styles.actingBody} ${josefinSans.className} ${alata.variable}`}
+    >
       <header className={styles.header}>
         <nav className={styles.navbar}>
           <Image src={IMAGES.logo} alt="loopstudios logo" />
@@ -68,8 +78,10 @@ export default function LoopstudiosLandingPage() {
             {Object.keys(creations).map((creation) => (
               <article
                 key={creations[creation].name}
+                className={styles.responsiveBg}
                 style={{
-                  background: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) center / cover no-repeat`,
+                  "--mobile-bg": `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) center / cover no-repeat`,
+                  "--desktop-bg": `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.desktop[creation]?.src}?v=0`}) center / cover no-repeat`,
                 }}
               >
                 {creations[creation].name}
@@ -94,10 +106,18 @@ export default function LoopstudiosLandingPage() {
         </div>
         <div className={styles.footerRightAndBottom}>
           <div className={styles.socials}>
-            <Image src={IMAGES.facebook} alt="facebook logo" />
-            <Image src={IMAGES.twitter} alt="twitter logo" />
-            <Image src={IMAGES.pinterest} alt="pinterest logo" />
-            <Image src={IMAGES.instagram} alt="instagram logo" />
+            <div>
+              <Image src={IMAGES.facebook} alt="facebook logo" />
+            </div>
+            <div>
+              <Image src={IMAGES.twitter} alt="twitter logo" />
+            </div>
+            <div>
+              <Image src={IMAGES.pinterest} alt="pinterest logo" />
+            </div>
+            <div>
+              <Image src={IMAGES.instagram} alt="instagram logo" />
+            </div>
           </div>
           <p className={alata.className}>
             © 2021 Loopstudios. All rights reserved.
