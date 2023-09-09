@@ -1,0 +1,31 @@
+{
+  "deepEarth": {
+    "name": "Deep\nearth",
+    "joinedName": "deep-earth"
+  },
+  "nightArcade": {
+    "name": "Night\narcade",
+    "joinedName": "night-arcade"
+  },
+  "soccerTeamVR": {
+    "name": "Soccer\nteam VR",
+    "joinedName": "soccer-team-vr"
+  },
+  "theGrid": {
+    "name": "The\ngrid",
+    "joinedName": "the-grid"
+  },
+  "fromUpAboveVR": {
+    "name": "From up\nabove VR",
+    "joinedName": "from-up-above-vr"
+  },
+  "pocketBorealis": {
+    "name": "Pocket\nborealis",
+    "joinedName": "pocket-borealis"
+  },
+  "theCuriosity": { "name": "The\ncuriosity", "joinedName": "the-curiosity" },
+  "makeItFisheye": {
+    "name": "Make it\nfisheye",
+    "joinedName": "make-it-fisheye"
+  }
+}
