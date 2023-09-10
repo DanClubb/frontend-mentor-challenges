@@ -44,7 +44,6 @@ Your users should be able to:
 
 - [Next.js](https://nextjs.org/) - React framework
 - CSS
-- Mobile-first workflow
 
 ## Author
 

@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component solution
+# Frontend Mentor - Sunnyside Agency Landing Page solution
 
 This is a solution to the [Sunnyside Agency Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help practice and improve coding skills by building realistic projects.
 
@@ -28,11 +28,11 @@ Your users should be able to:
 
 #### Desktop
 
-![my solution for the results summary challenge (desktop)](./solutions/sunnyside-desktop.png)
+![my solution for the Sunnyside Agency Landing Page challenge (desktop)](./solutions/sunnyside-desktop.png)
 
 #### Mobile
 
-![my solution for the results summary challenge (mobile)](./solutions/sunnyside-mobile.png)
+![my solution for the Sunnyside Agency Landing Page challenge (mobile)](./solutions/sunnyside-mobile.png)
 
 ### Links
 
@@ -44,7 +44,6 @@ Your users should be able to:
 
 - [Next.js](https://nextjs.org/) - React framework
 - CSS
-- Mobile-first workflow
 
 ## Author
 
