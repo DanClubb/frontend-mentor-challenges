@@ -254,6 +254,12 @@
   letter-spacing: 0.25rem;
 }
 
+.seeAll:hover,
+.seeAll:focus {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 @media (min-width: 600px) {
   .creationsSection {
     display: grid;

@@ -84,7 +84,7 @@ export default function LoopstudiosLandingPage() {
                   "--desktop-bg": `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.desktop[creation]?.src}?v=0`}) center / cover no-repeat`,
                 }}
               >
-                {creations[creation].name}
+                <p>{creations[creation].name}</p>
               </article>
             ))}
           </div>
