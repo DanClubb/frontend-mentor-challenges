@@ -5,7 +5,7 @@
     "skills": ["html", "css"],
     "difficulty": "newbie",
     "difficultyNumber": "1",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "This challenge was a good way to practice with CSS colour gradients and using opacity to achieve different shades of colour."
   },
   "sunnysideAgencyLandingPage": {
     "route": "/sunnyside-agency-landing-page",
@@ -13,7 +13,7 @@
     "skills": ["html", "css", "js"],
     "difficulty": "junior",
     "difficultyNumber": "2",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "This landing page was a perfect test of my layout and responsive skills. There were a couple of tricky elements in this design that gave me a chance to learn about and use the ::after and ::before CSS pseudo tags."
   },
   "loopstudiosLandingPage": {
     "route": "/loopstudios-landing-page",
@@ -21,7 +21,7 @@
     "skills": ["html", "css", "js"],
     "difficulty": "junior",
     "difficultyNumber": "2",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "This landing page challenge was a fun way to practice my CSS Grid & Flexbox layout skills! I also learnt a lot about using background images."
   },
   "productPreviewCard": {
     "route": "/product-preview-card",
@@ -29,7 +29,7 @@
     "skills": ["html", "css"],
     "difficulty": "newbie",
     "difficultyNumber": "1",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "This challenge required chaning an image element depending on screen size, this led to me learning about <picture> and <source> tags that use srcset which enable the src of an image to be changed."
   },
   "newsHomepage": {
     "route": "/news-homepage",
@@ -37,7 +37,7 @@
     "skills": ["html", "css", "js"],
     "difficulty": "junior",
     "difficultyNumber": "2",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "This news homepage challenge was an excellent opportunity to practice my CSS Grid skills. There were lots of tricky decisions to make and plenty of learning opportunities!"
   },
   "columnPreviewCard": {
     "route": "/3-column-preview-card",
@@ -45,6 +45,6 @@
     "skills": ["html", "css"],
     "difficulty": "newbie",
     "difficultyNumber": "1",
-    "description": "This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!"
+    "description": "The column preview card challenge was a quick way to practice my responsive layout skills."
   }
 }
