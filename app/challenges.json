@@ -7,6 +7,14 @@
     "difficultyNumber": "1",
     "description": "This challenge was a good way to practice with CSS colour gradients and using opacity to achieve different shades of colour."
   },
+  "loopstudiosLandingPage": {
+    "route": "/loopstudios-landing-page",
+    "title": "Loopstudios Landing Page",
+    "skills": ["html", "css", "js"],
+    "difficulty": "junior",
+    "difficultyNumber": "2",
+    "description": "This landing page challenge was a fun way to practice my CSS Grid & Flexbox layout skills! I also learnt a lot about using background images."
+  },
   "sunnysideAgencyLandingPage": {
     "route": "/sunnyside-agency-landing-page",
     "title": "Sunnyside Agency Landing Page",
@@ -15,13 +23,13 @@
     "difficultyNumber": "2",
     "description": "This landing page was a perfect test of my layout and responsive skills. There were a couple of tricky elements in this design that gave me a chance to learn about and use the ::after and ::before CSS pseudo tags."
   },
-  "loopstudiosLandingPage": {
-    "route": "/loopstudios-landing-page",
-    "title": "Loopstudios Landing Page",
-    "skills": ["html", "css", "js"],
+  "huddleLandingPage": {
+    "route": "/huddle-landing-page",
+    "title": "Huddle Landing Page",
+    "skills": ["html", "css"],
     "difficulty": "junior",
     "difficultyNumber": "2",
-    "description": "This landing page challenge was a fun way to practice my CSS Grid & Flexbox layout skills! I also learnt a lot about using background images."
+    "description": "This challenge was a good way to practice with CSS colour gradients and using opacity to achieve different shades of colour."
   },
   "productPreviewCard": {
     "route": "/product-preview-card",

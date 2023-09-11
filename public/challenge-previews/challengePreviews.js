@@ -7,6 +7,7 @@ const CHALLENGE_PREVIEWS = {
     .default,
   loopstudiosLandingPage: require("./loopstudios-landing-page-preview.jpg")
     .default,
+  huddleLandingPage: require("./huddle-landing-page-preview.jpg").default,
 };
 
 export default CHALLENGE_PREVIEWS;
