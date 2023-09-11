@@ -1,19 +1,26 @@
 .homepage {
-  /* background-color: rgb(251, 245, 245); */
   background-color: rgb(255, 253, 250);
 }
 
 .title {
   padding-top: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
 }
 
-.homepageDescription {
-  margin-top: 3rem;
+.text {
+  margin: 2rem auto 0 auto;
+  width: min(70ch, 100% - 4rem);
   font-weight: 600;
   text-align: center;
+}
+
+.designs {
+  margin-top: 1rem;
+  color: darkgray;
+  font-size: 0.8rem;
+  font-weight: 900;
 }
 
 .links {

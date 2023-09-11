@@ -9,10 +9,23 @@ export default function Home() {
   });
   return (
     <main className={styles.homepage}>
-      <h1 className={styles.title}>Frontend Mentor Challenges</h1>
-      <p className={styles.homepageDescription}>
-        Click a link to view my finished attempt of each challenge
-      </p>
+      <h1 className={styles.title}>
+        <span>Frontend </span>
+        <span>Mentor </span>
+        <span>Challenges</span>
+      </h1>
+      <div className={styles.text}>
+        <p className={styles.homepageDescription}>
+          Click a card below to view my finished attempt of the challenge
+        </p>
+        <p className={styles.designs}>
+          All challenges have been built to match the provided designs which
+          were created to the following widths:
+          <br /> - Mobile: 375px
+          <br /> - Desktop: 1440px{" "}
+        </p>
+      </div>
+
       <section className={styles.links}>
         {sortByDifficulty.map((challenge) => (
           <ChallengeCard

@@ -80,7 +80,8 @@ main {
 }
 
 .attribution {
-  margin-top: auto;
+  padding: 2rem 0;
+  background-color: lightgray;
   font-size: 11px;
   text-align: center;
 }
