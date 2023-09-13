@@ -28,7 +28,11 @@ export default function huddleLandingPage() {
             engage in genuine discussion.{" "}
           </p>
           <button>Get Started For Free</button>
-          <Image src={IMAGES.screenMockups} alt="screen mockups" />
+          <Image
+            className={styles.screenMockups}
+            src={IMAGES.screenMockups}
+            alt="screen mockups"
+          />
           <div>
             <div className={styles.stats}>
               <Image src={IMAGES.communities} alt="communities" />
@@ -47,13 +51,14 @@ export default function huddleLandingPage() {
               media="(min-width:420px)"
             />
             <Image
-              className={styles.footerCurved}
+              className={styles.curves}
               src={IMAGES.mobile.firstSectionTop}
               alt="svg that gives the footer a curved top"
             />
           </picture>
           <div>
             <Image
+              className={styles.illustration}
               src={IMAGES.growTogether}
               alt="illustration of two people with online messages in the background"
             />
@@ -70,46 +75,48 @@ export default function huddleLandingPage() {
               media="(min-width:420px)"
             />
             <Image
-              className={styles.footerCurved}
+              className={styles.curves}
               src={IMAGES.mobile.firstSectionBottom}
               alt="svg that gives the footer a curved top"
             />
           </picture>
         </section>
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.flowingConversation}`}>
           <Image
+            className={styles.illustration}
             src={IMAGES.flowingConversation}
             alt="illustration of three people in conversation around a table"
           />
 
           <h2 className={poppins.className}>Flowing Conversations</h2>
           <p>
-            You wouldn't paginate a conversation in real life, so why do it
+            You wouldn&apos;t paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow.
           </p>
         </section>
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.yourUsers}`}>
           <picture>
             <source
               srcSet={IMAGES.desktop.secondSectionTop.src}
               media="(min-width:420px)"
             />
             <Image
-              className={styles.footerCurved}
+              className={styles.curves}
               src={IMAGES.mobile.secondSectionTop}
               alt="svg that gives the footer a curved top"
             />
           </picture>
           <div>
             <Image
+              className={styles.illustration}
               src={IMAGES.yourUsers}
               alt="illustration of three people who appear to be sticking online profiles to a wall"
             />
 
             <h2 className={poppins.className}>Your Users</h2>
             <p>
-              It takes no time at all to integrate Huddle with your app's
+              It takes no time at all to integrate Huddle with your app&apos;s
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
             </p>
@@ -120,13 +127,13 @@ export default function huddleLandingPage() {
               media="(min-width:420px)"
             />
             <Image
-              className={styles.footerCurved}
+              className={styles.curves}
               src={IMAGES.mobile.secondSectionBottom}
               alt="svg that gives the footer a curved top"
             />
           </picture>
         </section>
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.ready}`}>
           <h2 className={poppins.className}>Ready To Build Your Community?</h2>
           <button>Get Started For Free</button>
         </section>
@@ -138,7 +145,7 @@ export default function huddleLandingPage() {
             media="(min-width:420px)"
           />
           <Image
-            className={styles.footerCurved}
+            className={styles.curves}
             src={IMAGES.mobile.footer}
             alt="svg that gives the footer a curved top"
           />
