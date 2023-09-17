@@ -17,6 +17,7 @@ export default function huddleLandingPage() {
         <Image src={IMAGES.logo} alt="huddle logo" />
         <button>Try it free</button>
       </header>
+
       <main>
         <section className={styles.section}>
           <h1 className={poppins.className}>
@@ -33,18 +34,23 @@ export default function huddleLandingPage() {
             src={IMAGES.screenMockups}
             alt="screen mockups"
           />
-          <div>
-            <div className={styles.stats}>
-              <Image src={IMAGES.communities} alt="communities" />
+          <div className={styles.stats}>
+            <div className={styles.stat}>
+              <Image
+                className={styles.communities}
+                src={IMAGES.communities}
+                alt="communities"
+              />
               <span>1.4k+</span> Communities Formed
             </div>
-            <div className={styles.stats}>
+            <div className={styles.stat}>
               <Image src={IMAGES.messages} alt="messages" />
               <span>2.7m+</span> Messages Sent
             </div>
           </div>
         </section>
-        <section className={styles.section}>
+
+        <section className={`${styles.section}`}>
           <picture>
             <source
               srcSet={IMAGES.desktop.firstSectionTop.src}
@@ -56,18 +62,20 @@ export default function huddleLandingPage() {
               alt="svg that gives the footer a curved top"
             />
           </picture>
-          <div>
+          <div className={`${styles.growTogetherContent}`}>
             <Image
               className={styles.illustration}
               src={IMAGES.growTogether}
               alt="illustration of two people with online messages in the background"
             />
-            <h2 className={poppins.className}>Grow Together</h2>
-            <p>
-              Generate meaningful discussions with your audience and build a
-              strong, loyal community. Think of the insightful conversations you
-              miss out on with a feedback form.
-            </p>
+            <div className={styles.growTogetherText}>
+              <h2 className={poppins.className}>Grow Together</h2>
+              <p>
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
           </div>
           <picture>
             <source
@@ -81,20 +89,23 @@ export default function huddleLandingPage() {
             />
           </picture>
         </section>
+
         <section className={`${styles.section} ${styles.flowingConversation}`}>
           <Image
             className={styles.illustration}
             src={IMAGES.flowingConversation}
             alt="illustration of three people in conversation around a table"
           />
-
-          <h2 className={poppins.className}>Flowing Conversations</h2>
-          <p>
-            You wouldn&apos;t paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+          <div className={styles.flowingConversationText}>
+            <h2 className={poppins.className}>Flowing Conversations</h2>
+            <p>
+              You wouldn&apos;t paginate a conversation in real life, so why do
+              it online? Our threads have just-in-time loading for a more
+              natural flow.
+            </p>
+          </div>
         </section>
+
         <section className={`${styles.section} ${styles.yourUsers}`}>
           <picture>
             <source
@@ -107,19 +118,20 @@ export default function huddleLandingPage() {
               alt="svg that gives the footer a curved top"
             />
           </picture>
-          <div>
+          <div className={`${styles.yourUsersContent}`}>
             <Image
               className={styles.illustration}
               src={IMAGES.yourUsers}
               alt="illustration of three people who appear to be sticking online profiles to a wall"
             />
-
-            <h2 className={poppins.className}>Your Users</h2>
-            <p>
-              It takes no time at all to integrate Huddle with your app&apos;s
-              authentication solution. This means, once signed in to your app,
-              your users can start chatting immediately.
-            </p>
+            <div className={styles.yourUsersText}>
+              <h2 className={poppins.className}>Your Users</h2>
+              <p>
+                It takes no time at all to integrate Huddle with your app&apos;s
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
           </div>
           <picture>
             <source
@@ -133,11 +145,13 @@ export default function huddleLandingPage() {
             />
           </picture>
         </section>
+
         <section className={`${styles.section} ${styles.ready}`}>
           <h2 className={poppins.className}>Ready To Build Your Community?</h2>
           <button>Get Started For Free</button>
         </section>
       </main>
+
       <footer>
         <picture>
           <source
@@ -150,6 +164,7 @@ export default function huddleLandingPage() {
             alt="svg that gives the footer a curved top"
           />
         </picture>
+
         <div className={styles.footerContent}>
           <div className={styles.footerInfo}>
             <svg width="240" height="39" xmlns="http://www.w3.org/2000/svg">
@@ -199,8 +214,10 @@ export default function huddleLandingPage() {
               weekly newsletter. We’ll never send you spam or pass on your email
               address
             </p>
-            <input type="email" required />
-            <button>Subscribe</button>
+            <div>
+              <input type="email" required />
+              <button>Subscribe</button>
+            </div>
           </form>
         </div>
       </footer>

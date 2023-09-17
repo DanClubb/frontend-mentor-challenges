@@ -10,15 +10,32 @@
 
   --gutterX: 2rem;
 
+  color: var(--very-dark-cyan);
   font-size: 0.825rem;
   font-weight: 600;
+}
+
+@media (min-width: 800px) {
+  .actingBody {
+    --gutterX: 5rem;
+
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .actingBody {
+    --gutterX: 7rem;
+
+    font-size: 1.2rem;
+  }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem var(--gutterX);
+  padding: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -28,9 +45,23 @@
 
 .header button {
   padding: 0.25rem 1.25rem;
-  border: 1px solid var(--light-pink);
+  border: 1px solid var(--pink);
   border-radius: 100px;
+  color: var(--pink);
+}
+
+.header button:hover {
+  border-color: var(--light-pink);
   color: var(--light-pink);
+}
+
+@media (min-width: 800px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+  .header img {
+    width: 15rem;
+  }
 }
 
 .section {
@@ -70,6 +101,15 @@
   font-weight: 700;
 }
 
+.section button:hover {
+  background-color: var(--light-pink);
+}
+
+.curves {
+  margin-bottom: -2px;
+  width: 100%;
+}
+
 .screenMockups {
   margin: 6rem 0;
   padding: 0 var(--gutterX);
@@ -79,27 +119,23 @@
   padding: 5rem 2.5rem;
 }
 
-.stats {
+.stat {
   width: 10.5rem;
   margin: 6rem auto;
   color: hsla(192, 100%, 9%, 0.5);
   font-weight: 600;
 }
 
-.stats img {
+.stat img {
   margin-left: 0.4rem;
   width: 1.75rem;
 }
 
-.stats span {
+.stat span {
   display: block;
   color: var(--very-dark-cyan);
   font-size: 3.75rem;
   font-weight: 700;
-}
-
-.curves {
-  width: 100%;
 }
 
 .flowingConversation {
@@ -122,6 +158,89 @@
   margin-bottom: 14rem;
 }
 
+@media (min-width: 800px) {
+  .section h1 {
+    font-size: 3rem;
+  }
+
+  .section h2 {
+    margin-inline: 0;
+    font-size: 2rem;
+  }
+
+  .section p {
+    max-width: 36rem;
+    margin-inline: auto;
+  }
+
+  .screenMockups {
+    margin-inline: auto;
+    padding: 0;
+  }
+
+  .growTogetherContent,
+  .flowingConversation,
+  .yourUsersContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--gutterX);
+    text-align: left;
+  }
+
+  .growTogetherContent,
+  .yourUsersContent {
+    flex-direction: row-reverse;
+  }
+
+  .illustration {
+    width: 20rem;
+  }
+
+  .stats {
+    display: flex;
+    align-items: center;
+    margin: 0 var(--gutterX);
+  }
+
+  .stat {
+    width: 15rem;
+    margin: 3rem auto 7rem auto;
+  }
+
+  .stat img {
+    width: 2.5rem;
+  }
+
+  .communities {
+    margin-left: 1rem;
+  }
+
+  .stat span {
+    font-size: 5rem;
+  }
+
+  .ready h2 {
+    padding-top: 10rem;
+  }
+
+  .ready button {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (min-width: 930px) {
+  .illustration {
+    width: 28rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .illustration {
+    width: 32rem;
+  }
+}
+
 .footerContent {
   display: flex;
   flex-direction: column-reverse;
@@ -129,6 +248,7 @@
   padding: 2rem var(--gutterX);
   background-color: var(--very-dark-cyan);
   color: var(--very-pale-blue);
+  font-size: 1rem;
 }
 
 .footerInfoText {
@@ -171,6 +291,10 @@
   font-weight: 700;
 }
 
+.newsletterForm button:hover {
+  background-color: var(--light-pink);
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -188,6 +312,58 @@
   gap: 1.5rem;
 }
 
+.socials img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 300ms ease-out;
+}
+
 .footerLogo {
   fill: white;
+}
+
+@media (min-width: 800px) {
+  .footerInfo {
+    width: 20rem;
+  }
+
+  .newsletterForm {
+    min-width: 25rem;
+  }
+
+  .newsletterForm h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 930px) {
+  .footerContent {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8rem;
+  }
+
+  .newsletterForm p {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsletterForm {
+    width: 35rem;
+  }
+
+  .newsletterForm div {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .newsletterForm input {
+    height: 3.5rem;
+  }
+
+  .newsletterForm button {
+    margin: 0;
+  }
 }
