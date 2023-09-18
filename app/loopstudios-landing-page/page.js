@@ -76,14 +76,14 @@ export default function LoopstudiosLandingPage() {
           <h2>Our creations</h2>
           <div className={styles.creations}>
             {Object.keys(creations).map((creation) => (
-              <article
-                key={creations[creation].name}
-                className={styles.responsiveBg}
-                style={{
-                  "--mobile-bg": `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) center / cover no-repeat`,
-                  "--desktop-bg": `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${`${IMAGES.desktop[creation]?.src}?v=0`}) center / cover no-repeat`,
-                }}
-              >
+              <article key={creations[creation].name}>
+                <div
+                  className={styles.responsiveBg}
+                  style={{
+                    "--mobile-bg": `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(${`${IMAGES.mobile[creation]?.src}?v=0`}) center / cover no-repeat`,
+                    "--desktop-bg": `linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(${`${IMAGES.desktop[creation]?.src}?v=0`}) center / cover no-repeat`,
+                  }}
+                ></div>
                 <p>{creations[creation].name}</p>
               </article>
             ))}
