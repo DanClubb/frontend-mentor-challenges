@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./ecommerce-product-page.module.css";
-import ProductImageBlock from "./components/productImageBlock";
+import ProductImageBlock from "./components/ProductImageBlock";
 import IMAGES from "./images/images";
 import { Kumbh_Sans } from "next/font/google";
 import { Fragment, useState } from "react";
