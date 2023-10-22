@@ -18,7 +18,7 @@ export default function EcommerceProductPage() {
   const [numItemsInCart, setNumItemsInCart] = useState(0);
   const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
   const [cartIsVisible, setCartIsVisible] = useState(false);
-  const [lightBoxActive, setLightBoxActive] = useState(true);
+  const [lightBoxActive, setLightBoxActive] = useState(false);
 
   const toggleMobileNav = () => {
     setMobileNavExpanded((prev) => {
