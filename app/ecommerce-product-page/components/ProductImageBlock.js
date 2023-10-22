@@ -5,7 +5,11 @@ import { Fragment, useState } from "react";
 import IMAGES from "../images/images.js";
 import styles from "../ecommerce-product-page.module.css";
 
-function ProductImageBlock() {
+function ProductImageBlock({
+  lightBoxActive,
+  handleLightBoxOpen,
+  handleLightBoxClose,
+}) {
   const [activeImage, setActiveImage] = useState(1);
 
   const handleThummbnailClick = (e) => {
@@ -24,27 +28,35 @@ function ProductImageBlock() {
       }
     });
   };
+
   return (
-    <div className={styles.carousel}>
+    <div className={`${styles.carousel}`}>
       <div className={styles.mainImage}>
-        <button className={styles.close}>
-          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
+        {lightBoxActive && (
+          <button className={styles.close} onClick={handleLightBoxClose}>
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+          </button>
+        )}
+
         <Image
           className={`${styles.productImage}`}
           src={IMAGES[`product${activeImage}`]}
           alt="shoes"
+          onClick={handleLightBoxOpen}
+          priority={true}
         />
 
         <button
           id="previous"
-          className={`${styles.control} ${styles.previous}`}
+          className={`${
+            lightBoxActive ? styles.lightBoxControl : styles.control
+          } ${styles.previous}`}
           onClick={(e) => handleThummbnailClick(e)}
         >
           <svg
@@ -65,7 +77,9 @@ function ProductImageBlock() {
         </button>
         <button
           id="next"
-          className={`${styles.control} ${styles.next}`}
+          className={`${
+            lightBoxActive ? styles.lightBoxControl : styles.control
+          } ${styles.next}`}
           onClick={(e) => handleThummbnailClick(e)}
         >
           <svg
@@ -89,55 +103,35 @@ function ProductImageBlock() {
       <div className={styles.thumbnails}>
         <div
           className={`${styles.productImage} ${
-            activeImage === 1 ? styles.activeThumbnail : ""
+            activeImage === 1 ? styles.activeThumbnail : styles.thumbnail
           }`}
           onClick={(e) => handleThummbnailClick(e)}
         >
-          <Image
-            id="1"
-            className={styles.productImage}
-            src={IMAGES.product1Thumbnail}
-            alt="shoes thumbnail"
-          />
+          <Image id="1" src={IMAGES.product1Thumbnail} alt="shoes thumbnail" />
         </div>
         <div
           className={`${styles.productImage} ${
-            activeImage === 2 ? styles.activeThumbnail : ""
+            activeImage === 2 ? styles.activeThumbnail : styles.thumbnail
           }`}
           onClick={(e) => handleThummbnailClick(e)}
         >
-          <Image
-            id="2"
-            className={styles.productImage}
-            src={IMAGES.product2Thumbnail}
-            alt="shoes thumbnail"
-          />
+          <Image id="2" src={IMAGES.product2Thumbnail} alt="shoes thumbnail" />
         </div>
         <div
           className={`${styles.productImage} ${
-            activeImage === 3 ? styles.activeThumbnail : ""
+            activeImage === 3 ? styles.activeThumbnail : styles.thumbnail
           }`}
           onClick={(e) => handleThummbnailClick(e)}
         >
-          <Image
-            id="3"
-            className={styles.productImage}
-            src={IMAGES.product3Thumbnail}
-            alt="shoes thumbnail"
-          />
+          <Image id="3" src={IMAGES.product3Thumbnail} alt="shoes thumbnail" />
         </div>
         <div
           className={`${styles.productImage} ${
-            activeImage === 4 ? styles.activeThumbnail : ""
+            activeImage === 4 ? styles.activeThumbnail : styles.thumbnail
           }`}
           onClick={(e) => handleThummbnailClick(e)}
         >
-          <Image
-            id="4"
-            className={styles.productImage}
-            src={IMAGES.product4Thumbnail}
-            alt="shoes thumbnail"
-          />
+          <Image id="4" src={IMAGES.product4Thumbnail} alt="shoes thumbnail" />
         </div>
       </div>
     </div>
