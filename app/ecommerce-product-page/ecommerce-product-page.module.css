@@ -482,7 +482,7 @@
   .cartView {
     width: 24rem;
     height: fit-content;
-    top: -6.25rem;
+    top: -2rem;
     left: 100%;
     transform: translateX(-90%);
   }
@@ -502,6 +502,12 @@
   .cartView button {
     margin-top: 0.5rem;
     margin-inline: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cartView {
+    top: -6.25rem;
   }
 }
 
