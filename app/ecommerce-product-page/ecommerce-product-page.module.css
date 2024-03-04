@@ -220,7 +220,6 @@
     align-items: center;
     gap: 3rem;
     margin-inline: var(--gutterX);
-    /* height: 600px; */
   }
 }
 
@@ -247,10 +246,6 @@
 }
 
 /* CAROUSEL */
-
-.carousel {
-  /* max-width: 30rem; */
-}
 
 .mainImage {
   margin-bottom: 2rem;
