@@ -15,7 +15,7 @@ export default function EasybankLandingPage() {
         <div className={styles.actingBody}>
             <Header publicSans={publicSans} />
             <main className={publicSans.className}>
-                <div className={styles.intro}>
+                <section className={styles.intro}>
                     <div className={styles.introText}>
                         <h1 className={styles.heading}>
                             Next generation digital banking
@@ -51,7 +51,25 @@ export default function EasybankLandingPage() {
                             alt="Phones using easybank"
                         />
                     </div>
-                </div>
+                </section>
+                <section>
+                    <h2>Why Choose Easybank?</h2>
+                    <p>
+                        We leverage Open banking to turn your bank account into
+                        your financial hub, Control your finances like never
+                        before.
+                    </p>
+
+                    <div>
+                        <img></img>
+                        <h3>Online Banking</h3>
+                        <p>
+                            Our modern web and mobile applications allow you to
+                            keep track of your finances wherever you are in the
+                            world.
+                        </p>
+                    </div>
+                </section>
             </main>
             <footer></footer>
         </div>
