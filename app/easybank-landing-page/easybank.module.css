@@ -121,15 +121,20 @@
         cursor: pointer;
     }
 
-    .navItems li:hover::before {
+    .navItems li::before {
         content: "";
-        width: 100%;
+        width: 0%;
         height: 3px;
         background-color: var(--lime-green);
+        transition: 300ms;
 
         position: absolute;
         bottom: -2.2rem;
         left: 0.1px;
+    }
+
+    .navItems li:hover::before {
+        width: 100%;
     }
 
     .headerButton {
