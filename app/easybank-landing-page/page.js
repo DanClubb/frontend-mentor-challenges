@@ -2,8 +2,10 @@ import { Public_Sans } from "next/font/google";
 import Image from "next/image";
 import { Fragment } from "react";
 import Header from "./components/Header";
+import WhyCard from "./components/WhyCard";
 import styles from "./easybank.module.css";
 import IMAGES from "./images/images";
+import reasons from "./reasons";
 
 const publicSans = Public_Sans({
     weight: ["300", "400", "700"],
@@ -52,24 +54,25 @@ export default function EasybankLandingPage() {
                         />
                     </div>
                 </section>
-                <section>
-                    <h2>Why Choose Easybank?</h2>
-                    <p>
+                <section className={styles.whyEasybank}>
+                    <h2 className={styles.h2}>Why Choose Easybank?</h2>
+                    <p className={styles.description}>
                         We leverage Open banking to turn your bank account into
-                        your financial hub, Control your finances like never
+                        your financial hub. Control your finances like never
                         before.
                     </p>
 
-                    <div>
-                        <img></img>
-                        <h3>Online Banking</h3>
-                        <p>
-                            Our modern web and mobile applications allow you to
-                            keep track of your finances wherever you are in the
-                            world.
-                        </p>
+                    <div className={styles.reasons}>
+                        {reasons.map((reason) => (
+                            <WhyCard
+                                icon={reason.icon}
+                                title={reason.title}
+                                description={reason.description}
+                            />
+                        ))}
                     </div>
                 </section>
+                <section className={styles.articles}></section>
             </main>
             <footer></footer>
         </div>

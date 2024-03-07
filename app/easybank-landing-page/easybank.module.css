@@ -92,6 +92,7 @@
 @media (min-width: 600px) {
     .header {
         justify-content: space-around;
+        padding: 1.5rem 0;
     }
 
     .darkenBackground {
@@ -160,8 +161,6 @@
 
 .introText {
     margin: -8rem 1.5rem 3rem;
-    text-align: center;
-    font-size: 18px;
 }
 
 .introText h1 {
@@ -217,8 +216,53 @@
 
     .introText {
         margin: 0;
-        padding-left: 9.5rem;
-        width: 33rem;
+        padding-left: 8.5rem;
+        width: 40rem;
         text-align: left;
     }
+
+    .introText h1 {
+        font-size: 3.5rem;
+    }
+
+    .introText p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Why Easybank */
+
+.h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+.whyEasybank {
+    padding: 4.5rem 8.5rem 0;
+    background-color: var(--light-grayish-blue);
+    height: calc(100vh - 10.9rem);
+}
+
+.description {
+    margin: 1.5rem 0 3.5rem;
+    max-width: 46.5rem;
+    font-size: 1.2rem;
+}
+
+.reasons {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.reasonTitle {
+    margin: 2rem 0 1rem;
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+}
+
+/* Articles */
+
+.articles {
+    background-color: var(--very-light-gray);
+    height: calc(100vh - 10.9rem);
 }
