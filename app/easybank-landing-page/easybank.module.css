@@ -149,6 +149,8 @@
     display: flex;
     flex-direction: column-reverse;
     background-color: var(--very-light-gray);
+    height: calc(100vh - 4.25rem);
+    text-align: center;
 }
 
 .images {
@@ -243,20 +245,24 @@
 }
 
 .whyEasybank {
-    padding: 4.5rem 8.5rem 0;
+    padding: 4rem 1.6rem;
+    text-align: center;
     background-color: var(--light-grayish-blue);
-    height: calc(100vh - 10.9rem);
+    font-size: 0.9rem;
 }
 
 .description {
     margin: 1.5rem 0 3.5rem;
-    max-width: 46.5rem;
-    font-size: 1.2rem;
 }
 
 .reasons {
     display: flex;
+    flex-direction: column;
     gap: 1.875rem;
+}
+
+.reasonIcon {
+    margin: 0 auto;
 }
 
 .reasonTitle {
@@ -265,9 +271,43 @@
     font-size: 1.4rem;
 }
 
-/* Articles */
+@media (min-width: 600px) {
+    .h2 {
+        font-size: 2rem;
+        color: var(--dark-blue);
+    }
 
-.articles {
-    background-color: var(--very-light-gray);
-    height: calc(100vh - 10.9rem);
+    .whyEasybank {
+        padding: 4.5rem 8.5rem 0;
+        background-color: var(--light-grayish-blue);
+        height: calc(100vh - 10.9rem);
+    }
+
+    .description {
+        margin: 1.5rem 0 3.5rem;
+        max-width: 46.5rem;
+        font-size: 1.2rem;
+    }
+
+    .reasons {
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .reasonIcon {
+        margin: unset;
+    }
+
+    .reasonTitle {
+        margin: 2rem 0 1rem;
+        color: var(--dark-blue);
+        font-size: 1.4rem;
+    }
+
+    /* Articles */
+
+    .articles {
+        background-color: var(--very-light-gray);
+        height: calc(100vh - 10.9rem);
+    }
 }

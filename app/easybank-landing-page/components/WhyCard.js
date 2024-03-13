@@ -4,7 +4,7 @@ import IMAGES from "../images/images";
 export default function WhyCard({ icon, title, description }) {
     return (
         <div className={styles.reason}>
-            <img src={IMAGES[icon].src} />
+            <img src={IMAGES[icon].src} className={styles.reasonIcon} />
             <h3 className={styles.reasonTitle}>{title}</h3>
             <p>{description}</p>
         </div>
