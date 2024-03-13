@@ -63,8 +63,9 @@ export default function EasybankLandingPage() {
                     </p>
 
                     <div className={styles.reasons}>
-                        {reasons.map((reason) => (
+                        {reasons.map((reason, idx) => (
                             <WhyCard
+                                key={idx}
                                 icon={reason.icon}
                                 title={reason.title}
                                 description={reason.description}
