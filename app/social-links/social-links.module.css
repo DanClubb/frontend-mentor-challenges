@@ -1,0 +1,73 @@
+.socialLinksBody {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+    --font-sizey: 14px;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey900);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--grey800);
+    border-radius: 0.75rem;
+}
+
+.profilePic {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--grey700);
+}
+
+.name {
+    color: var(--white);
+}
+
+.location {
+    color: var(--green);
+}
+
+.name,
+.location {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    color: var(--white);
+    background-color: var(--grey700);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+
+.link:hover,
+.link:focus-visible {
+    background-color: var(--green);
+    color: var(--grey900);
+    cursor: pointer;
+}
