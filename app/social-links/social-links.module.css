@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--grey800);
     border-radius: 0.75rem;
 }
@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 17.5rem;
     padding: 0.75rem;
     color: var(--white);
     background-color: var(--grey700);
