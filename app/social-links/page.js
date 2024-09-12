@@ -23,7 +23,7 @@ export default function SocialLinks() {
 
                     <li>
                         <a
-                            href="https://www.linkedin.com/in/danielclubb/"
+                            href="https://www.linkedin.com/in/dan-clubb/"
                             className={styles.link}
                             target="_blank"
                         >
