@@ -35,6 +35,9 @@
     height: 5rem;
     border-radius: 50%;
     background-color: var(--grey700);
+    background-image: url("./assets/images/avatar-dan.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .name {
