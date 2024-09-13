@@ -13,7 +13,7 @@
         "skills": ["html", "css"],
         "difficulty": "newbie",
         "difficultyNumber": "1",
-        "description": "In this challenge, I used semantic HTML and CSS, focusing on creating accessible, interactive social links with clear hover and focus states. I also worked on ensuring keyboard navigation"
+        "description": "In this challenge I used semantic HTML and CSS, focusing on creating accessible, interactive social links with clear hover and focus states. I also worked on ensuring keyboard navigation."
     },
     "loopstudiosLandingPage": {
         "route": "/loopstudios-landing-page",

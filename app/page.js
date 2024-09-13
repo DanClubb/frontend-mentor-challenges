@@ -22,8 +22,10 @@ export default function Home() {
                 <p className={styles.designs}>
                     All challenges have been built to match the provided designs
                     which were created to the following widths:
-                    <br /> - Mobile: 375px
-                    <br /> - Desktop: 1440px{" "}
+                    <br />
+                    Mobile: 375px
+                    <br />
+                    Desktop: 1440px{" "}
                 </p>
             </div>
 
