@@ -29,7 +29,7 @@
         "skills": ["html", "css", "js"],
         "difficulty": "intermediate",
         "difficultyNumber": "3",
-        "description": "This landing page challenge was a fun way to practice my CSS Grid & Flexbox layout skills! I also learnt a lot about using background images."
+        "description": "In this challenge, I practiced building interactive elements with JavaScript, including a lightbox gallery and cart functionality. I also ensure the layout adapts across different screen sizes and refine hover states for interactive elements."
     },
     "sunnysideAgencyLandingPage": {
         "route": "/sunnyside-agency-landing-page",
@@ -45,7 +45,7 @@
         "skills": ["html", "css"],
         "difficulty": "junior",
         "difficultyNumber": "2",
-        "description": "This challenge was a good way to practice with CSS colour gradients and using opacity to achieve different shades of colour."
+        "description": "I practiced using CSS to create curved section designs and focused on responsive layout techniques. This challenge helped refine my eye for detail and layout consistency across different devices."
     },
     "productPreviewCard": {
         "route": "/product-preview-card",
