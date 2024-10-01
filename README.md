@@ -9,4 +9,4 @@ As Next.js uses a folder-based routing system, I have separated each challenge i
 ## Links
 
 - Live Site URL: https://danclubb-frontend-mentor-challenges.vercel.app/
-- Personal Website - [Dan Clubb](https://danclubb.vercel.app/)
+- Personal Website - [Dan Clubb](https://www.danclubb.com/)
