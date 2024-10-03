@@ -6,6 +6,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 As Next.js uses a folder-based routing system, I have separated each challenge into its own folders/routes inside the app directory. This allows me to host all my solutions in one web app and deployment.
 
+Each challenge can be found inside the [app directory](https://github.com/DanClubb/frontend-mentor-challenges/tree/main/app).
+
+Inside each challenge folder, you should find a design folder containing design images for desktop and mobile view and the hover states, a solutions folder that contains screenshots of my solutions on both desktop and mobile, a page.js file which is where you can find my html/jsx , a CSS file with all my styles and a README.md explaining the challenge
+
 ## Links
 
 - Live Site URL: https://danclubb-frontend-mentor-challenges.vercel.app/
