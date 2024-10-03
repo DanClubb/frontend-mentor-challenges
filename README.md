@@ -8,7 +8,7 @@ As Next.js uses a folder-based routing system, I have separated each challenge i
 
 Each challenge can be found inside the [app directory](https://github.com/DanClubb/frontend-mentor-challenges/tree/main/app).
 
-Inside each challenge folder, you should find a design folder containing design images for desktop and mobile view and the hover states, a solutions folder that contains screenshots of my solutions on both desktop and mobile, a page.js file which is where you can find my html/jsx , a CSS file with all my styles and a README.md explaining the challenge
+Inside each challenge folder, you should find a [design folder](https://github.com/DanClubb/frontend-mentor-challenges/tree/main/app/news-homepage/design) containing design images for desktop and mobile view and the hover states, a [solutions folder](https://github.com/DanClubb/frontend-mentor-challenges/tree/main/app/news-homepage/solutions) that contains screenshots of my solutions on both desktop and mobile, a [page.js file](https://github.com/DanClubb/frontend-mentor-challenges/blob/main/app/news-homepage/page.js) which is where you can find my html/jsx , a [CSS file](https://github.com/DanClubb/frontend-mentor-challenges/blob/main/app/news-homepage/news-homepage.module.css) with all my styles and a [README.md](https://github.com/DanClubb/frontend-mentor-challenges/blob/main/app/news-homepage/README.md) explaining the challenge
 
 ## Links
 
